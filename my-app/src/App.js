@@ -8,7 +8,6 @@ import exercise from './images/icon-exercise.svg';
 import social from './images/icon-social.svg';
 import selfcare from './images/icon-self-care.svg';
 
-
 function App() {
   return (
     <main>
@@ -18,7 +17,7 @@ function App() {
   <Study />
   <Exercise />
   <Social />
-      <Selfcare />
+    1<Selfcare />
     </main>
   );
 }
@@ -28,14 +27,14 @@ const User = () => {
     <div className="user content-box">
       <img src={ avatar } alt="user image" />
       <h1>Report for</h1>
-      <p></p>
+      <p>Jeremy Robson</p>
     </div>);
 }
 const Work = () => {
   return (
   <div className="work content-box">
     <img src={ work } alt="work icon" />
-    <h2>work</h2>
+    <h1>work</h1>
     <p></p>
   </div>
 )}
@@ -43,7 +42,7 @@ const Play = () => {
   return (
   <div className="play content-box">
     <img src={ play } alt="play icon" />
-    <h3>Play</h3>
+    <h1>Play</h1>
     <p></p>
   </div>
 )}
@@ -51,7 +50,7 @@ const Study = () => {
   return (
   <div className="study content-box">
     <img src={ study } alt="study icon" />
-    <h4>Study</h4>
+    <h1>Study</h1>
     <p></p>
   </div>
 )}
@@ -59,7 +58,7 @@ const Exercise = () => {
   return (
   <div className="excersice content-box">
     <img src={ exercise } alt="exercise icon" />
-    <h5>Exercise</h5>
+    <h1>Exercise</h1>
     <p></p>
   </div>
 )}
@@ -67,7 +66,7 @@ const Social = () => {
   return(
   <div className="social content-box">
     <img src={ social } alt="social icon" />
-    <h6>Social</h6>
+    <h1>Social</h1>
     <p></p>
   </div>
 )}
@@ -75,7 +74,7 @@ const Selfcare = () => {
   return (
   <div className="selfcare content-box">
     <img src={ selfcare } alt="selfcar icon" />
-    <h7>Selfcare</h7>
+    <h1>Selfcare</h1>
     <p></p>
   </div>
 )}
