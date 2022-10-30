@@ -12,8 +12,6 @@ function App() {
         );
       })}
     </div>
-    
-
   </main>
   )
 }
@@ -29,14 +27,25 @@ const User = () => {
 }
 
 const Activity = (props) => {
-  const {  title, img } = props.activity;
+  const { title, img,
+    timeframes:
+    { daily, weekly, monthly }
+    
+  } = props.activity;
   return (
     <div className='content-box'>
       <span>
-        <img src={img} alt="" />
+        <img id="icon-svg" src={img} alt="" />
       </span>
 
       <h1>{title}</h1>
+      <p>{daily.current}</p>
+      <p>{ daily.previous }</p>
+      <p>{weekly.current}</p>
+      <p>{ weekly.previous }</p>
+      <p>{monthly.current}</p>
+      <p>{ monthly.previous }</p>
+      
       
     </div>
   );
