@@ -8,7 +8,7 @@ function App() {
     <div >
       {data.map(activity => {
         return (
-          <Activity key={activity.title} activity={activity}/>
+          <Activity key={activity.title} activity={activity} />
         );
       })}
     </div>
@@ -29,9 +29,12 @@ const User = () => {
 }
 
 const Activity = (props) => {
-  const { title } = props.activity;
+  const {  title, img } = props.activity;
   return (
     <div className='content-box'>
+      <span>
+        <img src={img} alt="" />
+      </span>
 
       <h1>{title}</h1>
       

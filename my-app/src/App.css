@@ -25,3 +25,8 @@ main{
   background-color: var(--dark-blue);
   margin: 2em;
 }
+
+img{
+  filter: saturate(1);
+
+}
