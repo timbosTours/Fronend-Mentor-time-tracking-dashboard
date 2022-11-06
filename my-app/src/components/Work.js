@@ -1,27 +1,21 @@
-import React from 'react'
+import React from 'react';
+import data from '../data.json';
+// import img from '../images/icon-work.svg'
 
 function Work() {
-    const { title, img,
-    timeframes:
-    { daily, weekly, monthly }
     
-} = props.activity;
-return (
-    <div className='content-box'>
-    <span>
-        <img id="icon-svg" src={img} alt="" />
-    </span>
-
-    <h1>{title}</h1>
-    <p>{daily.current}</p>
-    <p>{ daily.previous }</p>
-    <p>{weekly.current}</p>
-    <p>{ weekly.previous }</p>
-    <p>{monthly.current}</p>
-    <p>{ monthly.previous }</p>
-    
-    
-    </div>)
-}
+        data.filter(_data => {
+            if (_data.title === 'Work') {
+                let workData = _data.timeframes;
+                return workData
+                
+            }
+            return (
+                <div className='content-box'>
+                    <h1>{workData}</h1>
+                </div>)
+        })
+        
+    }
 
 export default Work
