@@ -6,14 +6,7 @@ import Work from './components/Work'
 function App() {
   return (<main>
     <User />
-    <Work />
-    {/* <div >
-      {data.map(activity => {
-        return (
-          <Activity key={activity.title} activity={activity} />
-        );
-      })}
-    </div> */}
+    <Work key={data.work}/>
   </main>
   )
 }
