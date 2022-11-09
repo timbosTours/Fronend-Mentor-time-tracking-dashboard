@@ -1,7 +1,9 @@
 import React from 'react';
 import avatar from '../images/image-jeremy.png';
+import data from '../data.json'
 
 const User = () => {
+    
     return (
     <div className="user">
         <img src={avatar} alt="" />
