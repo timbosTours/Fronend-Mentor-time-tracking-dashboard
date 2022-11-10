@@ -2,7 +2,7 @@ import React from 'react'
 
 function Play() {
   return (
-    <div>Play</div>
+    <div className='content-box'>Play</div>
   )
 }
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Study() {
   return (
-    <div>Study</div>
+    <div className='content-box'>Study</div>
   )
 }
 

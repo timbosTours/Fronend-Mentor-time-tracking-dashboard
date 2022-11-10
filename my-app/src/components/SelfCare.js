@@ -2,7 +2,7 @@ import React from 'react'
 
 function SelfCare() {
   return (
-    <div>SelfCare</div>
+    <div className='content-box'>SelfCare</div>
   )
 }
 

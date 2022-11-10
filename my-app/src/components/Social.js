@@ -2,7 +2,7 @@ import React from 'react'
 
 function Social() {
   return (
-    <div>Social</div>
+    <div className='content-box'>Social</div>
   )
 }
 
