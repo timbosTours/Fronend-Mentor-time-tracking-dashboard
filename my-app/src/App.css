@@ -25,4 +25,29 @@ main{
   background-color: var(--dark-blue);
   margin: 2em;
 }
+.user{
+  background-color: white;
+  height: 300px;
+  weight: 300px;
+}
 
+.icon-work{
+  background-color: white;
+  ;
+}
+
+.icon-play{
+  background-color: hotpink;
+}
+.icon-study{
+  background-color: hotpink;
+}
+.icon-exercise{
+  background-color: hotpink;
+}
+.icon-social{
+  background-color: hotpink;
+}
+.icon-selfcare{
+  background-color: hotpink;
+}
