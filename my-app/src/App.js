@@ -3,7 +3,7 @@ import User from './components/User'
 
 function App() {
   return (<main>
-    <User />
+    <User key={''} />
   </main>
   )
 }
