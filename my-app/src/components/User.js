@@ -2,9 +2,6 @@ import React, {useState} from 'react';
 import avatar from '../images/image-jeremy.png';
 import Activity from './Activity';
 
-
-
-
 const User = () => {
     // se
     const [value, setValue] = useState(2)
