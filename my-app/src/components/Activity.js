@@ -3,7 +3,7 @@ import data from '../data.json'
 
 function Activity(props) {
     return (
-    data.map(activityData => (
+        data.map(activityData => (
                 <div key={activityData.title} className='content-box'>
                 
                     <img className={`icon-${activityData.title.toLowerCase()}`} src={activityData.img} alt="" />
