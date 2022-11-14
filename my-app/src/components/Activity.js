@@ -1,14 +1,18 @@
 import React from 'react'
 import data from '../data.json'
 
+
+// create a component to render different data sets
 function Activity(props) {
     return (
+        // map data to different elements
         data.map(activityData => (
                 <div key={activityData.title} className='content-box'>
                 
                     <img className={`icon-${activityData.title.toLowerCase()}`} src={activityData.img} alt="" />
                     <h1>{activityData.title}</h1>
-                    <ul>
+                <ul>
+                    {/* use conditional rendering to render correct data timeframe based on button input(passed down as props from user component) */}
                         {props.value === 1 ?
                             <div>
                                 <h1>{activityData.timeframes.daily.current}hrs</h1>
