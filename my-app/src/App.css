@@ -1,6 +1,10 @@
 :root{
   --very-dark-blue: hsl(226, 43%, 10%);
   --dark-blue: hsl(235, 46%, 20%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+
+  --violet: hsl(264, 64%, 52%)
 }
 
 *{
@@ -19,17 +23,40 @@ main{
   justify-content: center;
 }
 
+.user{
+  border: 2px solid red;
+  background-color: var(--desaturated-blue);
+  min-height: 15em;
+  max-width: 20em;
+  margin: 2em;
+}
+
+.avatar-box{
+  display: flex;
+}
+
+.avatar{
+  height: 6em;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin: 1em;
+}
+
+.timeframes{
+  background-color: var(--dark-blue);
+}
+
+button{
+  margin: 1em;
+}
+
 .content-box{
   min-height: 15em;
   width: 20em;
   background-color: var(--dark-blue);
   margin: 2em;
 }
-.user{
-  background-color: white;
-  height: 300px;
-  weight: 300px;
-}
+
 
 .icon-work{
   background-color: white;

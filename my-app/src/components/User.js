@@ -8,22 +8,27 @@ const User = () => {
 
     
     return (
-        <div className="user">
-            <img src={avatar} alt="" />
-            <h1>Report for</h1>
-            <h2>Jeremy Robson</h2>
+        <main>
+            <div className='user'>
             
-            {/* menu of buttons to handle state and pass it down compnent tree */}
+            <img className='avatar' src={avatar} alt="" />
+            <h1 className='report-for'>Report for</h1>
+            <h2 className='user-name'>Jeremy Robson</h2>
+            
+                {/* menu of buttons to handle state and pass it down compnent tree */}
+                <div className='timeframes'>
             <menu className='menu'>
                 <button key={'daily'} onClick={() =>
                 { setValue(1) }} className='daily' >Daily</button>
                 <button key={'weekly'} onClick={() => { setValue(2) }} className='weekly' >Weekly</button>
                 <button key={'monthly'} onClick={() => { setValue(3) }} className='monthly'
-                >Monthly</button>
-            </menu>
+                    >Monthly</button>
+                    </menu>
+                </div>
+            </div>
             {/* child component recieves value in form of state */}
             <Activity value={value} />
-        </div>
+        </main>
     )
 }
 
