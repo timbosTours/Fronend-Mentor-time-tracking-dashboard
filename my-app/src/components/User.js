@@ -10,11 +10,11 @@ const User = () => {
     return (
         <main>
             <div className='user'>
-            
+            <div className='avatar-box'>
             <img className='avatar' src={avatar} alt="" />
             <h1 className='report-for'>Report for</h1>
             <h2 className='user-name'>Jeremy Robson</h2>
-            
+            </div>
                 {/* menu of buttons to handle state and pass it down compnent tree */}
                 <div className='timeframes'>
             <menu className='menu'>
