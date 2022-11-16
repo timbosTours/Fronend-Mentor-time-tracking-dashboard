@@ -24,11 +24,27 @@ main{
 }
 
 .user{
+  position: relative;
   border: 2px solid red;
   background-color: var(--desaturated-blue);
   min-height: 15em;
   max-width: 20em;
   margin: 2em;
+}
+
+.timeframes{
+  background-color: var(--dark-blue);
+  position: absolute;
+  bottom: 0;
+  width: 20em;
+  text-align: center;
+}
+
+button{
+  margin: 1em;
+  color: white;
+  background-color: var(--dark-blue);
+  border: none;
 }
 
 .avatar-box{
@@ -40,14 +56,6 @@ main{
   height: 6em;
   border: 3px solid white;
   border-radius: 50%;
-  margin: 1em;
-}
-
-.timeframes{
-  background-color: var(--dark-blue);
-}
-
-button{
   margin: 1em;
 }
 
