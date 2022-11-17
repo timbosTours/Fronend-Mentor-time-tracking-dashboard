@@ -20,11 +20,13 @@ const User = () => {
                     >Monthly</button>
                     </menu>
                 </div>
+                <div className='user-card'>
             <div className='avatar-box'>
             <img className='avatar' src={avatar} alt="" />
             <h1 className='report-for'>Report for</h1>
             <h2 className='user-name'>Jeremy Robson</h2>
-            </div>
+                    </div>
+                </div>
             </div>
             {/* child component recieves value in form of state */}
             <Activity value={value} />
