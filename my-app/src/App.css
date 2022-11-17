@@ -98,7 +98,8 @@ button{
   border: none;
 }
 
-button :hover{
+button:hover{
+  cursor: pointer;
   color: white;
 }
 
