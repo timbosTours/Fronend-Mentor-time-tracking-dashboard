@@ -37,7 +37,7 @@ main{
   position: relative;
   border-radius: 19px;
   background-color: var(--dark-blue);
-  min-height: 12em;
+  min-height: 13em;
   max-width: 22em;
   margin: 2em;
 }
@@ -47,11 +47,6 @@ main{
   background-color: var(--blue);
 }
 
-
-.avatar-box{
-  border-radius: 50%;
-  display: flex;
-}
 
 .avatar{
   height: 4em;
@@ -86,18 +81,18 @@ main{
 .timeframes{
   background-color: var(--dark-blue);
   position: absolute;
-  border-radius: 20px;
+  border-radius: 0px 0px 20px 20px;
   bottom: 0;
   width: 21em;
-  height: 3.5em;
+  height: 3.2em;
+  padding-bottom: 1.3em;
   text-align: center;
 }
 
 button{
-  margin: 1em;
-  margin-bottom: 1.5em;
+  margin: 1.5em;
   color: var(--desaturated-blue);
-  font-size: 16px;
+  font-size: 18px;
   font-family: var(--ff-rubik);
   background-color: var(--dark-blue);
   border: none;
