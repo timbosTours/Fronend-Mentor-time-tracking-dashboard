@@ -7,7 +7,12 @@
   --desaturated-blue: hsl(235, 45%, 61%);
   --pale-blue: hsl(236, 100%, 87%);
 
-  --violet: hsl(264, 64%, 52%);
+--light-red-work: hsl(15, 100%, 70%);
+--soft-blue-play: hsl(195, 74%, 62%);
+--light-red-study: hsl(348, 100%, 68%);
+--lime-green-exercise: hsl(145, 58%, 55%);
+--violet-social: hsl(264, 64%, 52%);
+--soft-orange-selfCare: hsl(43, 84%, 65%);
 
   --ff-rubik: 'Rubik', sans-serif;
 }
@@ -33,7 +38,7 @@ main{
   border-radius: 19px;
   background-color: var(--dark-blue);
   min-height: 12em;
-  max-width: 20em;
+  max-width: 22em;
   margin: 2em;
 }
 
@@ -72,9 +77,9 @@ main{
   font-weight: 300;
   color: white;
   position: absolute;
-  left: 4.7em;
+  left: 4.3em;
   top: 2.75em;
-  font-size: 22px;
+  font-size: 24px;
   max-height: 2em;
 }
 
@@ -83,7 +88,7 @@ main{
   position: absolute;
   border-radius: 20px;
   bottom: 0;
-  width: 20em;
+  width: 21em;
   height: 3.5em;
   text-align: center;
 }
@@ -104,19 +109,86 @@ button:hover{
 }
 
 .content-box{
+  position: relative;
   min-height: 10em;
-  width: 20em;
+  width: 21em;
   background-color: var(--dark-blue);
   margin: 2em;
   font-family: var(--ff-rubik);
+  border-radius: 20px;
 }
 
+.icon{
+  float: right;
+  padding-right: 1em;
+  border-radius: 20px 20px 0px 0px;
+  height: 5em;
+  width: 5em;
+  padding-left: 15em;
+}
+
+.icon-work{
+  background-color: var(--light-red-work);
+}
+
+.icon-play{
+  background-color: var(--soft-blue-play);
+}
+.icon-study{
+  background-color: var(--light-red-study);
+}
+.icon-exercise{
+  background-color: var(--lime-green-exercise);
+  height: 4em;
+}
+.icon-social{
+  background-color: var(--violet-social);
+}
+.icon-selfcare{
+  background-color: var(--soft-orange-selfCare);
+  height: 4em;
+}
+
+.activity-data{
+  position: absolute;
+  border-radius: 20px ;
+  max-height: 8em;
+  margin-top: 2.25em;
+  width: 21em;
+  background-color: var(--dark-blue);
+}
 
 .activity-title{
   font-size: 18px;
+  font-weight: 400;
   color: white;
+  margin: 1em;
+  margin-bottom: 0em;
 }
 
+.title-dots{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+}
+
+.dot{
+  color: var(--pale-blue);
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.activity-times{
+  display: flex;
+  margin: 1.5em;
+  margin-top: 0.5em;
+  justify-content: space-between;
+  align-items: center;
+}
 .hours{
   color: white;
   font-weight: 300;
@@ -128,22 +200,3 @@ button:hover{
   font-weight: 400;
 }
 
-.icon-work{
-  background-color: white;
-}
-
-.icon-play{
-  background-color: hotpink;
-}
-.icon-study{
-  background-color: hotpink;
-}
-.icon-exercise{
-  background-color: hotpink;
-}
-.icon-social{
-  background-color: hotpink;
-}
-.icon-selfcare{
-  background-color: hotpink;
-}
