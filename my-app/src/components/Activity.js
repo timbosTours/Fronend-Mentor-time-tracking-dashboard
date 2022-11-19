@@ -7,7 +7,7 @@ function Activity(props) {
     return (
         // map data to different elements
         data.map(activityData => (
-                <div key={activityData.title} className='content-box'>
+                <article key={activityData.title} className='content-box'>
                     
                 <img className={`icon icon-${activityData.title.toLowerCase()} `} src={activityData.img} alt="" />
                 <div className='activity-data'>
@@ -42,7 +42,7 @@ function Activity(props) {
                             : null}
                     </ul>
                 </div>
-                </div>
+                </article>
             )))}
 
 
