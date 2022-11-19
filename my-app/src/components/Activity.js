@@ -24,20 +24,20 @@ function Activity(props) {
                         {props.value === 1 ?
                             <div  className='activity-times'>
                                 <h1 className='hours'>{activityData.timeframes.daily.current}hrs</h1>
-                                <h2 className='previous'>Yesterday - {activityData.timeframes.daily.previous}</h2>
+                                <h2 className='previous'>Yesterday - {activityData.timeframes.daily.previous}hrs</h2>
 
                             </div>
                             : null}
                         {props.value === 2 ?
                             <div  className='activity-times'>
                                 <h1 className='hours'>{activityData.timeframes.weekly.current}hrs</h1>
-                                <h2 className='previous'>Last Week - {activityData.timeframes.daily.previous}</h2>
+                                <h2 className='previous'>Last Week - {activityData.timeframes.weekly.previous}hrs</h2>
                             </div>
                             : null}
                         {props.value === 3 ?
                             <div  className='activity-times'>
                                 <h1 className='hours'>{activityData.timeframes.monthly.current}hrs</h1>
-                                <h2 className='previous'>Last Month - {activityData.timeframes.daily.previous}</h2>
+                                <h2 className='previous'>Last Month - {activityData.timeframes.monthly.previous}hrs</h2>
                             </div>
                             : null}
                     </ul>
