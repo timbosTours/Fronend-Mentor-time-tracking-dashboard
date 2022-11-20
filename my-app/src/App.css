@@ -242,4 +242,14 @@ button:hover{
     margin-left: 1em;
   }
 
+  .report-for{
+    left: 2.5em;
+    top: 12em;
+  }
+
+  .user-name{
+    left: 1.25em;
+    top: 8em;
+  }
+
 }
