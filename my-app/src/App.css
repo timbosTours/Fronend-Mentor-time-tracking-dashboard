@@ -38,7 +38,7 @@ main{
   border-radius: 19px;
   background-color: var(--dark-blue);
   min-height: 13em;
-  max-width: 22em;
+  width: 21em;
   margin: 2em;
 }
 
@@ -84,7 +84,7 @@ main{
   border-radius: 0px 0px 20px 20px;
   bottom: 0;
   width: 21em;
-  height: 3.2em;
+  max-height: 3.2em;
   padding-bottom: 1.3em;
   text-align: center;
 }
@@ -195,3 +195,51 @@ button:hover{
   font-weight: 400;
 }
 
+
+@media (min-width: 700px) {
+  body{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  main{
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+  .user{
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    width: 16em;
+    min-height: 33em;
+  }
+
+  .user-card{
+    height: 22em;
+  }
+
+  .content-box{
+    width: 16em;
+  }
+
+  .icon{
+    width: 4em;
+    padding-left: 11em;
+  }
+  .activity-data{
+    width: 16em;
+  }
+  .timeframes{
+    text-align: left;
+    width: 6em;
+    bottom: 5em;
+  }
+  button{
+    margin: 0.5em;
+    margin-left: 1em;
+  }
+
+}
