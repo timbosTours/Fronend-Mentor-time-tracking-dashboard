@@ -223,7 +223,7 @@ button:hover{
   }
 
   .user-card{
-    height: 22em;
+    height: 23em;
   }
 
   .content-box{
@@ -247,14 +247,23 @@ button:hover{
     margin-left: 1em;
   }
 
+  .avatar{
+    height: 6em;
+  }
+  
   .report-for{
     left: 2.5em;
-    top: 12em;
+    top: 13em;
   }
 
   .user-name{
-    left: 1.25em;
-    top: 8em;
+    font-size: 32px;
+    text-align: left;
+    max-height: 12em;
+    max-width: 6em;
+    left: 1em;
+    top: 6em;
   }
+
 
 }
