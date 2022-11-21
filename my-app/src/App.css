@@ -198,13 +198,18 @@ button:hover{
 
 @media (min-width: 700px) {
   body{
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
+    position: relative;
   }
-
+  
   main{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 25%);
+
+
   display: grid;
+  
   gap: 1em;
   grid-template-columns: repeat(4, 1fr);
 }
