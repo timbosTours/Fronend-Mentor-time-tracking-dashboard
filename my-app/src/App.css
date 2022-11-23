@@ -113,6 +113,10 @@ button:hover{
   border-radius: 20px;
 }
 
+.content-box:hover{
+  cursor: pointer;
+}
+
 .icon{
   float: right;
   padding-right: 1em;
@@ -147,10 +151,15 @@ button:hover{
 .activity-data{
   position: absolute;
   border-radius: 20px ;
-  max-height: 8em;
-  margin-top: 2.25em;
+  min-height: 8em;
+  margin-top: 2.5em;
   width: 21em;
   background-color: var(--dark-blue);
+}
+
+.activity-data:hover{
+  cursor: pointer;
+  filter: brightness(1.5);
 }
 
 .activity-title{
@@ -264,32 +273,20 @@ button:hover{
     left: 1em;
     top: 6em;
   }
+
   .activity-data{
-    /* border: 1px solid red; */
+    min-height: 10em;
   }
-
-.activity-title{
-  /* border:   1px solid hotpink; */
-}
-.title-dots{
-  /* border: 1px solid black; */
-}
-
-.dot{
-  
-}
 
 .activity-times{
   display: inline;
 }
 .hours{
-  /* border: 1px solid green; */
   font-size: 40px;
   padding-left: .5em;
 }
 
 .previous{
-  /* border: 1px solid yellow; */
   margin: 1em;
   padding-left: 0.5em;
 }
