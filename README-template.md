@@ -16,9 +16,10 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
+
+This project was bootsraped with create React app. This is my second project I have built with React so there were many refactors along the way as I explored different topics like props, state and hooks. I am using the book; Road to React by Robin Wieruch.
 
 ### The challenge
 
@@ -42,23 +43,22 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: (https://github.com/timbosTours/Fronend-Mentor-time-tracking-dashboard)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
+
+I started off with a mobile first approach. I added a few basic styles for the layout but mostly worked on the JSX functionality. I had to understand the difference between props and state and spent a lot of time trying out different hooks that I have been learning about, useState, useEffect etc...
+
+Once I had everything working nicely, I styled finished styling the mobile layout then moved on to desktop then added the hover effects.
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
