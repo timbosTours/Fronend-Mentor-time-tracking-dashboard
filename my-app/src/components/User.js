@@ -13,12 +13,10 @@ const User = () => {
                 {/* menu of buttons to handle state and pass it down compnent tree */}
                 <div className='timeframes'>
             <menu className='menu'>
-                <button key={'daily'} onClick={() =>
-                { setValue(1) }} className='daily' >Daily</button>
-                <button key={'weekly'} onClick={() => { setValue(2) }} className='weekly' >Weekly</button>
-                <button key={'monthly'} onClick={() => { setValue(3) }} className='monthly'
-                    >Monthly</button>
-                    </menu>
+                        <button key={'daily'} onClick={() => { setValue(1) }} className={value === 1 ? "clicked" : null}>Daily</button>
+                <button key={'weekly'} onClick={() => { setValue(2) }} className={value === 2 ? "clicked" : null} >Weekly</button>
+                <button key={'monthly'} onClick={() => { setValue(3) }} className={value === 3 ? "clicked" : null} >Monthly</button>
+                </menu>
                 </div>
                 <div className='user-card'>
             <div className='avatar-box'>

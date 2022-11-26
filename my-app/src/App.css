@@ -103,7 +103,11 @@ button:hover{
   color: white;
 }
 
-button:focus{
+/* button:focus{
+  color: white;
+} */
+
+.clicked{
   color: white;
 }
 
