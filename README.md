@@ -31,8 +31,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](../time-tracking-dashboard-main/my-app/src/images/screenshot-desktop.png)
-![](../time-tracking-dashboard-main/my-app/src/images/screenshot-mobile.png)
+![](./my-app/public/images/screenshot-desktop.png)
+![](./my-app/public/images/screenshot-mobile.png)
+
 
 ### Links
 
@@ -43,7 +44,7 @@ Users should be able to:
 
 I started off with a mobile first approach. I added a few basic styles for the layout but mostly worked on the JSX functionality. I had to understand the difference between props and state and spent a lot of time trying out different hooks that I have been learning about, useState, useEffect etc...
 
-Once I had everything working nicely, I styled finished styling the mobile layout then moved on to desktop then added the hover effects.
+Once I had everything working nicely, I styled finished styling the mobile layout then moved on to desktop then added the hover effects and media queries then a few final touch ups.
 
 ### Built with
 
@@ -55,51 +56,59 @@ Once I had everything working nicely, I styled finished styling the mobile layou
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Being my second React app, I learnt way to much to put here, a couple of cool things were conditional rendering;
 
-To see how you can add code snippets, see below:
+```<ul>
+                    {/* use conditional rendering to render correct data timeframe based on button input(passed down as props from user component) */}
+                        {props.value === 1 ?
+                            <div  className='activity-times'>
+                                <h1 className='hours'>{activityData.timeframes.daily.current}hrs</h1>
+                                <h2 className='previous'>Yesterday - {activityData.timeframes.daily.previous}hrs</h2>
 
-```html
-<h1>Some HTML code I'm proud of</h1>
+                            </div>
+                            : null}
+                        {props.value === 2 ?
+                            <div  className='activity-times'>
+                                <h1 className='hours'>{activityData.timeframes.weekly.current}hrs</h1>
+                                <h2 className='previous'>Last Week - {activityData.timeframes.weekly.previous}hrs</h2>
+                            </div>
+                            : null}
+                        {props.value === 3 ?
+                            <div  className='activity-times'>
+                                <h1 className='hours'>{activityData.timeframes.monthly.current}hrs</h1>
+                                <h2 className='previous'>Last Month - {activityData.timeframes.monthly.previous}hrs</h2>
+                            </div>
+                            : null}
+                    </ul>
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+And conditional variables;
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```
+<menu className='menu'>
+                        <button key={'daily'} onClick={() => { setValue(1) }} className={value === 1 ? "clicked" : null}>Daily</button>
+                <button key={'weekly'} onClick={() => { setValue(2) }} className={value === 2 ? "clicked" : null} >Weekly</button>
+                <button key={'monthly'} onClick={() => { setValue(3) }} className={value === 3 ? "clicked" : null} >Monthly</button>
+                </menu>
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I could probably and a middle media query to smooth out the breakpoints
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Road to React](https://www.amazon.com/Road-learn-React-pragmatic-React-js/dp/172004399X/ref=sr_1_1?crid=1MQQYFZP0LXBI&keywords=road+to+react&qid=1669440975&sprefix=road+to+react%2Caps%2C570&sr=8-1) - This is a great book
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Timothy Fawcett](https://github.com/timbosTours)
+- Frontend Mentor - [@timbosTours](https://www.frontendmentor.io/profile/timbosTours)
+- Twitter - [@timbosTours](https://www.twitter.com/timbosTours)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Thanks Frontend Mentor and thank you for reviewing my code :)
