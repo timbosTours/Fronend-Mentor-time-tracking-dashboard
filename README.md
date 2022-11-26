@@ -42,9 +42,9 @@ Users should be able to:
 
 ## My process
 
-I started off with a mobile first approach. I added a few basic styles for the layout but mostly worked on the JSX functionality. I had to understand the difference between props and state and spent a lot of time trying out different hooks that I have been learning about, useState, useEffect etc...
+I started off with a mobile first approach. I added a few basic styles for the layout but mostly worked on the JSX functionality. I learnt about the difference between props and state and spent a lot of time trying out different hooks that I have been learning about, useState, useEffect etc...
 
-Once I had everything working nicely, I styled finished styling the mobile layout then moved on to desktop then added the hover effects and media queries then a few final touch ups.
+Once I had everything working nicely, I finished styling the mobile layout then moved on to desktop then added the hover effects and media queries then a few final touch ups.
 
 ### Built with
 
@@ -59,27 +59,27 @@ Once I had everything working nicely, I styled finished styling the mobile layou
 Being my second React app, I learnt way to much to put here, a couple of cool things were conditional rendering;
 
 ```<ul>
-                    {/* use conditional rendering to render correct data timeframe based on button input(passed down as props from user component) */}
-                        {props.value === 1 ?
-                            <div  className='activity-times'>
-                                <h1 className='hours'>{activityData.timeframes.daily.current}hrs</h1>
-                                <h2 className='previous'>Yesterday - {activityData.timeframes.daily.previous}hrs</h2>
+    {/* use conditional rendering to render correct data timeframe based on button input(passed downprops from user component) */}
+        {props.value === 1 ?
+            <div  className='activity-times'>
+                <h1 className='hours'>{activityData.timeframes.daily.current}hrs</h1>
+                <h2 className='previous'>Yesterday - {activityData.timeframes.daily.previous}hrs</h2>
 
-                            </div>
-                            : null}
-                        {props.value === 2 ?
-                            <div  className='activity-times'>
-                                <h1 className='hours'>{activityData.timeframes.weekly.current}hrs</h1>
-                                <h2 className='previous'>Last Week - {activityData.timeframes.weekly.previous}hrs</h2>
-                            </div>
-                            : null}
-                        {props.value === 3 ?
-                            <div  className='activity-times'>
-                                <h1 className='hours'>{activityData.timeframes.monthly.current}hrs</h1>
-                                <h2 className='previous'>Last Month - {activityData.timeframes.monthly.previous}hrs</h2>
-                            </div>
-                            : null}
-                    </ul>
+            </div>
+            : null}
+        {props.value === 2 ?
+            <div  className='activity-times'>
+                <h1 className='hours'>{activityData.timeframes.weekly.current}hrs</h1>
+                <h2 className='previous'>Last Week - {activityData.timeframes.weekly.previous}hrs</h2>
+            </div>
+            : null}
+        {props.value === 3 ?
+            <div  className='activity-times'>
+                <h1 className='hours'>{activityData.timeframes.monthly.current}hrs</h1>
+                <h2 className='previous'>Last Month - {activityData.timeframes.monthly.previous}hrs</h2>
+            </div>
+            : null}
+    </ul>
 ```
 
 And conditional variables;
