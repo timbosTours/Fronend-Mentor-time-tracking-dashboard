@@ -103,6 +103,10 @@ button:hover{
   color: white;
 }
 
+button:focus{
+  color: white;
+}
+
 .content-box{
   position: relative;
   min-height: 10em;
