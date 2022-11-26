@@ -26,7 +26,7 @@ body{
   background-color: var(--very-dark-blue);
 }
 
-main{
+.main-content{
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: 7;
@@ -208,18 +208,12 @@ button:hover{
   font-weight: 400;
 }
 
-@media (max-width: 500px) and (max-width: 700px) {
-main{
-  grid-template-columns: repeat(2, 1fr);
-}
-}
-
 @media (min-width: 700px) {
   body{
     position: relative;
   }
   
-  main{
+  .main-content{
   position: absolute;
   left: 50%;
   top: 50%;

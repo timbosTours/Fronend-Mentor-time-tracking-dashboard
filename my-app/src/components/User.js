@@ -8,7 +8,7 @@ const User = () => {
 
     
     return (
-        <main>
+        <div className='main-content'>
             <div className='user'>
                 {/* menu of buttons to handle state and pass it down compnent tree */}
                 <div className='timeframes'>
@@ -28,7 +28,7 @@ const User = () => {
             </div>
             {/* child component recieves value in form of state */}
             <Activity value={value} />
-        </main>
+        </div>
     )
 }
 

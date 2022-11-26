@@ -19,7 +19,7 @@ function Activity(props) {
                         <span className='dot'>.</span>
                         </div>
                     </div>
-                <ul>
+                <div>
                     {/* use conditional rendering to render correct data timeframe based on button input(passed down as props from user component) */}
                         {props.value === 1 ?
                             <div  className='activity-times'>
@@ -40,7 +40,7 @@ function Activity(props) {
                                 <h2 className='previous'>Last Month - {activityData.timeframes.monthly.previous}hrs</h2>
                             </div>
                             : null}
-                    </ul>
+                    </div>
                 </div>
                 </article>
             )))}
