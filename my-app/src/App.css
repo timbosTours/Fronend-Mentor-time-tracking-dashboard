@@ -222,7 +222,7 @@ button:hover{
 
   display: grid;
   
-  gap: 1em;
+  gap: -1em;
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -248,6 +248,7 @@ button:hover{
   }
   .activity-data{
     width: 16em;
+    height: 12em;
   }
   .timeframes{
     text-align: left;
